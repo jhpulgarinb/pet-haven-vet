@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Apdopci&oacute;n mascotas, Adopci&oacute;n perros, Adopci&oacute;n gatos, Adopci&oacute;n hamsters, Adopci&oacute;n conejos, Adopci&oacute;n, animales callejeros">
+        <meta name="description" content="Adopta un perro, gato o roedor asistiendo a nuestra cl&iacute;nica veterinaria Pet X Vet, d&oacute;nde tendras la oportunidad de conocer a tu nuevo mejor amigo.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <title>Adopta tu peludito</title>
+        <link rel="stylesheet" href="/CSS/adopt_style.css">
+        <script src="/js/Filtro.js"></script>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#principal"> <!--Imagen y eslogan de la página-->
+            <img class="important" src="/Imagenes/Bars/Main_logo.png" alt="Logo_Pet_X_Vet" class="d-inline-block align-text-center"> Pet X Vet
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Main_page.html#principal">P&aacute;gina principal</a></li>
+                  <li><a class="dropdown-item" href="Main_page.html#main_2">¿Qu&eacute; te ofrecemos? </a></li>
+                  <li><a class="dropdown-item" href="Main_page.html#main_3">¿Quienes somos?</a></li>
+                  <li><a class="dropdown-item" href="Main_page.html#main_4">Sucursales</a></li>
+                  <li><a class="dropdown-item" href="Main_page.html#main_5">Servicios</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Adopta
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#adopt_section">Ver peluditos</a></li>
+                  <li><a class="dropdown-item" href="Main_page.html#main_6">Form&uacute;lario</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/index/tiendavirtual/index.html">Tienda-pet</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+        <body>
+            <section id="main_adopt">
+                <div class="main_img">
+                    <img src="/Imagenes/adopt_page/Main.jpg" alt="Imagen principal">
+                    <img class="vector" src="/Imagenes/adopt_page/Vector.svg"alt="vector para efecto de ola para imagen">
+                    <h1>Esperamos por t&iacute;</h1>
+                </div>
+                <div class="adopt_intro">
+                    <button class="button_ref"><span>👇</span>⁺₊✧¡Ir a adoptar! ✧₊⁺</button>
+                    <p class="short description">Un peludito est&aacute; esperando por t&iacute;</p>
+                    <p class="long description">A continuaci&oacute;n encontrar&aacute;s un amigo que desea encontrar y crear una aventura junto a t&iacute;. Cada animal merece un hogar lleno de cari&ntilde;o, ya sea un perro fiel, un gato cari&ntilde;oso, un h&aacute;mster juguet&oacute;n o un conejo intrepido. Ven, adopta y haz la diferencia en su vida y en la tuya.<br><br>Observa y elige el peludito que m&aacute;s te interesa en conocer. Te redireccionaremos para llenar un formulario en donde ingresaras tus datos para nosotros poder contactarte y agendar una cita para conocer al nuevo miembro de tu familia.</p>
+                </div>
+            </section>
+            <section id="adopt_section">
+                <div class="subsection">
+                    <h2 class="title">Conoce a:</h2>
+                    <div>
+                      <p class="sub">Filtrar por</p> 
+                      <select id="mascota" onchange="filtrarMascotas(this.value)">
+                        <option value="todos" selected >Seleccione una opci&oacute;n</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="conejo">Conejo</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="information">
+                    <div class="white perro" onclick="mostrarImagen(this)">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Sasha.jpeg" alt="Sasha perro Doberman negro">
+                        <p class="name">Sasha</p>
+                      </div>  
+                    </div>
+
+                    <div class="white perro">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Luna.jpeg" alt="Luna perro Alaskan Malamute">
+                        <p class="name">Luna</p>
+                      </div>
+                    </div>
+
+                    <div class="white perro">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Drake.jpg" alt="Drake perro Yorkshire Terrier marron">
+                        <p class="name">Drake</p>
+                      </div>
+                    </div>
+
+                    <div class="white gato">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Freia.jpeg" alt="Freia gato Birman gris claro">
+                        <p class="name">Freia</p>
+                      </div>
+                    </div>
+
+                    <div class="white gato">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Victorino.jpg" alt="Victorino gato Chausie naranja">
+                        <p class="name">Victorino</p>
+                      </div>  
+                    </div>
+
+                    <div class="white gato">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Sombra.jpeg" alt="Sombra gato Chartreux gris oscuro">
+                        <p class="name">Sombra</p>
+                      </div> 
+                    </div>
+
+                    <div class="white hamster">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Copito_de_nieve.jpg" alt="Copito de nieve hamster">
+                        <p class="name">Copito de nieve</p>
+                      </div>
+                    </div>
+
+                    <div class="white conejo">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                        <div class="black">
+                          <img class="icons" src="/Imagenes/adopt_page/Buggie.jpg" alt="Buggie conejo marron">
+                          <p class="name">Buggie</p>
+                        </div>
+                    </div>
+
+                    <div class="white perro">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Rogelio.jpg" alt="Rogelio perro Beagle marron">
+                        <p class="name">Rogelio</p>
+                      </div>
+                    </div>
+
+                    <div class="white perro">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                        <div class="black">
+                          <img class="icons" src="/Imagenes/adopt_page/Pragonio.jpg" alt="Pragonio perro German Shepherd negro-marron">
+                          <p class="name">Pragonio</p>
+                        </div>
+                    </div>
+
+                    <div class="white perro">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Lupe.jpeg" alt="Lupe perro Bernese Mountain Dog negro-marron claro">
+                        <p class="name">Lupe</p>
+                      </div>
+                    </div>
+
+                    <div class="white gato">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                        <div class="black">
+                          <img class="icons" src="/Imagenes/adopt_page/Amalia.jpg" alt="Amalia gato Turkish Angoragris ">
+                          <p class="name">Amalia</p>
+                      </div>
+                    </div>
+
+                    <div class="white gato">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Perla.jpg" alt="Perla gato Turkish Angora crema">
+                        <p class="name">Perla</p>
+                      </div>
+                    </div>
+
+                    <div class="white gato">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Aurora.jpeg" alt="Aurora gato Japanese Bobtail  blaco-baige">
+                        <p class="name">Aurora</p>
+                      </div>
+                    </div>
+
+                    <div class="white coejo">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Skips.jpeg" alt="Skips conejo blanco marr&oacute;n">
+                        <p class="name">Skips</p>
+                      </div>
+                    </div>
+
+                    <div class="white hamster">
+                      <img class="finger" src="" alt="dedo como s&iacute;mbolo para aumentar tama&ntilde;o">
+                      <div class="black">
+                        <img class="icons" src="/Imagenes/adopt_page/Roberto.jpeg" alt="Roberto hamster marron">
+                        <p class="name">Roberto</p>
+                      </div>
+                    </div>
+                </div>                    
+            </section>
+        </body>
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-logo">
+              <img src="/Imagenes/Bars/Pet_x_vet_white_logo.png" alt="Logo Pet X Vet">
+            </div>
+            <div class="footer-links">
+              <div class="link-column">
+                <h4>Informaci&oacute;n Legal</h4>
+                <ul>
+                  <li><a href="#">Pol&iacute;tica de Privacidad</a></li>
+                  <li><a href="#">T&eacute;rminos y Condiciones</a></li>
+                </ul>
+              </div>
+              <div class="link-column">
+                <h4>Nuestras Sucursales</h4>
+                <ul>
+                  <li><a href="Main_page.html#main_4">Bogot&aacute;</a></li>
+                  <li><a href="Main_page.html#main_4">Cali</a></li>
+                  <li><a href="Main_page.html#main_4">Medell&iacute;n</a></li>
+                </ul>
+              </div>
+              <div class="link-column">
+                <h4>Adopci&oacute;n</h4>
+                <ul>
+                  <li><a href="login.html">Proceso de Adopci&oacute;n</a></li>
+                  <li><a href="adoption.html">Mascotas Disponibles</a></li>
+                </ul>
+              </div>
+              <div class="link-column">
+                <h4>¿Qui&eacute;nes somos?</h4>
+                <ul>
+                  <li><a href="Main_page.html#main_3">Nuestra Historia</a></li>
+                  <li><a href="Main_page.html#main_3">Nuestro Equipo</a></li>
+                </ul>
+              </div>
+              <div class="link-column">
+                <h4>Servicios</h4>
+                <ul>
+                  <li><a href="/index/tiendavirtual/index.html">Consultas M&eacute;dicas</a></li>
+                  <li><a href="/index/tiendavirtual/index.html">Tienda Virtual</a></li>
+                </ul>
+              </div>
+              <div class="link-column">
+                <h4>Tienda Virtual</h4>
+                <ul>
+                  <li><a href="/index/tiendavirtual/index.html">Acceder a la tienda</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-social">
+              <h4>Con&oacute;cenos en:</h4>
+              <div class="social-icons">
+                <a href="#"><img src="/Imagenes/Bars/facebook_logo.png" alt="Facebook"></a>
+                <a href="#"><img src="/Imagenes/Bars/instagram_logo.png" alt="Instagram"></a>
+                <a href="#"><img src="/Imagenes/Bars/X_logo.png" alt="Twitter"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Pet x Vet. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+    </body>
+</html>
